@@ -28,7 +28,7 @@ function App() {
               ]
             )
           }
-          // console.log(response.data);
+          console.log(response.data);
           setWeather(response.data)
         })
         .catch((error) => {

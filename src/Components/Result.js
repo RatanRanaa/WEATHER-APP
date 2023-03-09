@@ -31,7 +31,11 @@ const Result = ({weatherData, historyData, historySearch}) => {
         <div>
           <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="" />
         </div>
-        <div>{weatherData.weather[0].main}</div>
+        <div className=' mt-8'>{weatherData.weather[0].main}</div>
+      </div>
+      <div className=' text-2xl flex justify-around my-2'>
+        <div>Max feels_like <hr /> <h1 className=' text-center mt-5'>{weatherData.main.feels_like}</h1></div>
+        <div>Min pressure <hr /> <h1 className=' text-center mt-5'>{weatherData.main.pressure}</h1></div>
       </div>
         </>
         :
